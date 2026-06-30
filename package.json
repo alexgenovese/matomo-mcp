@@ -1,0 +1,36 @@
+{
+  "name": "@alexgenovese/matomo-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for Matomo Analytics - Direct HTTP Reporting API integration",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "matomo-mcp": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint src/**/*.{ts,js}"
+  },
+  "keywords": [
+    "mcp",
+    "matomo",
+    "analytics",
+    "model-context-protocol"
+  ],
+  "author": "Alex Genovese",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.6.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
